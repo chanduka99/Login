@@ -21,13 +21,7 @@ function SignUpPage() {
   };
 
   return (
-    // <div className='h-[100vh] bg-slate-500'>
-    //   {/* <Background/> */}
-    //   <div className='h-[8vh] bg-black'></div>
-    //   {isSignUp && (<SignUp onSignUpClicked={setSignUpVisible}/>)}
-    //   {isVerifyAccount && (<VerifyAccount userEmail ={email} onConfirmOTPClicked={setVerfiyAccountVisible}/>) }
-    //   {(isRegister && <Register/>)}
-    // </div>
+
     <div className="bg-[rgba(0,41,69,0.1)] h-[100vh] w-full relative overflow-clip">
       <div className="absolute right-1">
         <img src={circle} alt="circle" className="" />
