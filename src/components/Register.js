@@ -5,6 +5,7 @@ import RegisterFormOne from "./RegisterFormOne";
 import RegisterFormTwo from "./RegisterFormTwo";
 import RegisterFormThree from "./RegisterFormThree";
 import RegisterFormFour from "./RegisterFormFour";
+import TabComponent from "./TabComponent";
 
 
 function Register() {
@@ -80,8 +81,12 @@ console.log("active tab num :",activeTab);
           </button>
         )}
         <h1 className=" header">Register</h1>
+        {/* tab Section */}
+        <div className="mt-5">
+          <TabComponent activeTab = {tab.current}/>
+        </div>
         {/* form area */}
-        <div className="mt-20">
+        <div className="mt-7">
           {isFormOne && (<RegisterFormOne onNextClicked={setFormOneVisible} />)}
           {isFormTwo && (<div className="max-h-[57vh] overflow-auto p-2">
             <RegisterFormTwo onNextClicked={setFormTwoVisible} />

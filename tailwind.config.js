@@ -19,9 +19,7 @@ module.exports = {
       'white':'#FFFFFF',
       'secondary': '#EE5F18',
       'poweredBy': '#6B7280',
-
-
-
+      'tabText': '#4A4A4A',
     }
   },
 }

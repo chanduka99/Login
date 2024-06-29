@@ -50,6 +50,18 @@ code {
     @apply rounded-[12px]  bg-[#002945] w-full h-14 text-white text-base font-normal;
   }
   
+  @layer components {
+    .tabUnderline {
+      @apply border-[1.5px] border-[#002945] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)];
+    }
+  }
+  
+  @layer components {
+    .tabTextSelected{
+      @apply  text-primary;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
   
   
 }
