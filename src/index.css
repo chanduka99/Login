@@ -1,8 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +16,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@layer components {
+  /* style for buttons */
+  .buttons {
+    @apply rounded-[4px] ;
+  }
+  /* style for cards */
+  .card {
+    @apply rounded-[24px] px-20 pt-14 pb-9 bg-white h-[91.5vh] w-[90vh];
+  }
+
+  /* syle for card headers */
+  @layer components {
+    .header {
+      @apply font-bold text-[#002945] flex justify-start;
+      font-size: 2.5rem; /* 40px */
+      line-height: 3.00625rem; /* 48.1px */
+    }
+  }
+
+  .formLabel {
+    @apply text-[#002945] flex text-lg ;
+  }
+
+  .formLabel2 {
+    @apply text-[#333333] flex text-base ;
+  }
+
+  .buttonPrimary {
+    @apply rounded-[12px]  bg-[#002945] w-full h-14 text-white text-base font-normal;
+  }
+  
+  
+  
+}
+
+/* for diabling the spin button */
+.spin-button-none::-webkit-outer-spin-button,
+.spin-button-none::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.spin-button-none {
+  -moz-appearance: textfield; /* for Firefox */
 }
