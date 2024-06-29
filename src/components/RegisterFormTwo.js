@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { TextInput,Datepicker } from "flowbite-react";
 import Dropdown from "./DropDown";
-import { FaCalendarAlt } from 'react-icons/fa';
 import { HiCalendar } from "react-icons/hi2";
 
 function RegisterFormTwo({onNextClicked}) {

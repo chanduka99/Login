@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { TextInput } from "flowbite-react";
+import React from "react";
 
 function RegisterFormOne({onNextClicked}) {
     function handleNext(){

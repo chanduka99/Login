@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { TextInput } from "flowbite-react";
 import { IoIosArrowBack } from "react-icons/io";
 import RegisterFormOne from "./RegisterFormOne";
 import RegisterFormTwo from "./RegisterFormTwo";

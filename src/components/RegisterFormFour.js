@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Dropdown from "./DropDown";
 import { toast } from 'sonner';
 import { BsStars } from "react-icons/bs";

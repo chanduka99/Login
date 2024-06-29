@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import OTPComponent from "./OTPComponent";
 
 function VerifyAccount({userEmail,onConfirmOTPClicked}) {
