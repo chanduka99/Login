@@ -4,7 +4,7 @@ import { TextInput } from "flowbite-react";
 
 function RegisterFormThree({onNextClicked}) {
     function handleNext(){
-        onNextClicked(2);
+        onNextClicked(false);
     }
   return (
     <div>
@@ -35,12 +35,11 @@ function RegisterFormThree({onNextClicked}) {
                 />
         </div>
         {/* Next button */}
-        <div className="flex justify-center mt-[18vh]">
-          <button className="buttonPrimary w-1/2">Next</button>
+        <div className="flex justify-center mt-[8vh]">
+          <button className="buttonPrimary w-1/2" onClick={handleNext}>Next</button>
         </div>
         {/* Login option */}
-        <div className="justify-center text-center px-8 py-5">
-          
+        <div className="justify-center text-center px-8 py-5">         
         </div>
         </div>
     </div>

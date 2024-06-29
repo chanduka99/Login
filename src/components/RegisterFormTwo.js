@@ -10,8 +10,10 @@ function RegisterFormTwo({onNextClicked}) {
     const [gender,setGender] = useState('');
     const [birthday,setBirthDay] = useState('');
     const [relationshipStatus,setRelationshipStatus]= useState('');
+    
     function handleNext(){
-        onNextClicked(2);
+        //setting form three visible and form two invisible
+        onNextClicked(false);
     }
 
 
@@ -72,9 +74,9 @@ function RegisterFormTwo({onNextClicked}) {
 
       
        
-        {/* SignUp button */}
+        {/* Next button */}
         <div className="flex justify-center mt-[8vh]">
-          <button className="buttonPrimary w-1/2">Next</button>
+          <button className="buttonPrimary w-1/2" onClick={handleNext}>Next</button>
         </div>
         {/* Login option */}
         <div className="justify-center text-center px-8 py-5">
