@@ -4,8 +4,14 @@ import { TextInput } from "flowbite-react";
 
 function RegisterFormOne({onNextClicked}) {
     function handleNext(){
-        //setting form two visible and form one invisible
+      try {
         onNextClicked(false);
+      } catch (error) {
+        
+      }finally{
+
+      }
+        //setting form two visible and form one invisible
     }
   return (
     <div>

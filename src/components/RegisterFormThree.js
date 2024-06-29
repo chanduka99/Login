@@ -4,7 +4,14 @@ import { TextInput } from "flowbite-react";
 
 function RegisterFormThree({onNextClicked}) {
     function handleNext(){
+      try {
+        //setting form three invisible and form fourr visible
         onNextClicked(false);
+      } catch (error) {
+        console.log(error);
+      }finally{
+
+      }
     }
   return (
     <div>

@@ -11,6 +11,7 @@ function RegisterFormFour() {
   };
   function handleConfirm(){
     try {
+      //success toast
         toast(
         <div>
             <div className="flex place-items-center">
@@ -23,9 +24,22 @@ function RegisterFormFour() {
             </div>
         </div>, { duration: 5000 });
 
+// toast for error
+// toast(
+//   <div>
+//       <div className="flex place-items-center">
+//           <h1 className="text-secondary text-2xl font-normal">Error !</h1>
+//           <span className="mx-1"></span>
+//       </div>
+//       <div>
+//           <h1>Your Account has been Created Unsuccesfully</h1>
+//       </div>
+//   </div>, { duration: 5000 });
+
         
 
     } catch (error) {
+      //success toast
         toast(
             <div>
                 <div className="flex place-items-center">

@@ -12,8 +12,15 @@ function RegisterFormTwo({onNextClicked}) {
     const [relationshipStatus,setRelationshipStatus]= useState('');
     
     function handleNext(){
+        try {
+            //setting form two invisible and form three visible
+            onNextClicked(false);
+        } catch (error) {
+            console.log(error)
+        }finally{
+
+        }
         //setting form three visible and form two invisible
-        onNextClicked(false);
     }
 
 
